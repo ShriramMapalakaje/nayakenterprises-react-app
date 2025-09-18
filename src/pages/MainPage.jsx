@@ -175,7 +175,7 @@ const MainPage = ({ darkMode, setDarkMode }) => {
                   />
                 
                 <div className="footer-name">Nayak Enterprises</div>
-                <div className="footer-tagline">Premium Document Solutions</div>
+                <div className="footer-tagline">Premium Folding Files Solutions</div>
               </div>
               
               <div className="footer-links">

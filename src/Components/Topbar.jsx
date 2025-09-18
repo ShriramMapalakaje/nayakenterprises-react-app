@@ -18,7 +18,7 @@ const Topbar = ({ darkMode, toggleMode }) => {
         ) : (
           <Moon size={20} className="theme-icon moon" />
         )}
-        <span><strong>{darkMode ? 'Light Mode' : 'Dark Mode'}</strong></span>
+        <span><strong>{darkMode ? 'Light' : 'Dark'}</strong></span>
 
       </button>
     </div>
