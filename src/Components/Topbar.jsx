@@ -1,18 +1,26 @@
 import React from 'react';
 import './Topbar.css';
-import MenuIcon from '@mui/icons-material/Menu';
+import { Moon, Sun } from 'lucide-react';
 
-const Topbar = ({ onToggle, darkMode }) => {
+const Topbar = ({ darkMode, toggleMode }) => {
   return (
     <div className={`topbar ${darkMode ? 'dark' : 'light'}`}>
-      <button className="menu-btn" onClick={onToggle}>
-        <MenuIcon style={{ color: darkMode ? '#030302ff' : '#000000ff' }} />
-      </button>
       <img 
         src={process.env.PUBLIC_URL + '/images/NayakLogo.png'} 
         alt="Nayak Enterprises Logo" 
         className="logo" 
       />
+
+      {/* Theme Toggle Button */}
+      <button className="theme-toggle-btn" onClick={toggleMode}>
+        {darkMode ? (
+          <Sun size={20} className="theme-icon sun" />
+        ) : (
+          <Moon size={20} className="theme-icon moon" />
+        )}
+        <span><strong>{darkMode ? 'Light Mode' : 'Dark Mode'}</strong></span>
+
+      </button>
     </div>
   );
 };

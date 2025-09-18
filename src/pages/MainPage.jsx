@@ -1,7 +1,7 @@
 // src/pages/MainPage.js
 import React, { useState, useEffect } from 'react';
 import Topbar from '../Components/Topbar';
-import Sidebar from '../Components/Sidebar';
+
 import './MainPage.css';
 
 const MainPage = ({ darkMode, setDarkMode }) => {
@@ -20,11 +20,11 @@ const MainPage = ({ darkMode, setDarkMode }) => {
         onToggle={() => setSidebarVisible(!sidebarVisible)} 
         darkMode={darkMode} 
       />
-      {/* <Sidebar 
+      <Topbar 
         isVisible={sidebarVisible} 
         darkMode={darkMode} 
         toggleMode={() => setDarkMode(!darkMode)} 
-      /> */}
+      />
       
       <div className="intro-fullwidth">
   <div className="intro-columns">
@@ -51,40 +51,77 @@ const MainPage = ({ darkMode, setDarkMode }) => {
           {/* Custom Ordering Section */}
           <div className="custom-order">
             <div className="order-header">
-              <h2>Custom File Ordering</h2>
+              <h2>File Samples</h2>
               <p>Create bespoke files tailored to your needs</p>
+
+
             </div>
+
+            
             
             <div className="order-options">
               <div className="order-card">
-                <div className="order-icon">📁</div>
-                <h3>Standard Files</h3>
-                <p>Basic folders for everyday use</p>
-                <div className="order-meta">
-                  <span>From 15₹</span>
-                  
+                <div className="intro-visual">
+                  <img 
+                    src={process.env.PUBLIC_URL + '/images/1683.jpg'} 
+                    alt="Nayak Enterprises Logo" 
+                     
+                  />
                 </div>
               </div>
               
-              <div className="order-card">
-                <div className="order-icon">📂</div>
-                <h3>Premium Files</h3>
-                <p>Enhanced durability and materials</p>
-                <div className="order-meta">
-                  <span>From 20₹</span>
-                  
+                            <div className="order-card">
+                <div className="intro-visual">
+                  <img 
+                    src={process.env.PUBLIC_URL + '/images/image2.jpg'} 
+                    alt="Nayak Enterprises Logo" 
+                     
+                  />
                 </div>
               </div>
+
               
-              <div className="order-card">
-                <div className="order-icon">🗂️</div>
-                <h3>Custom Solutions</h3>
-                <p>Tailored to your specifications</p>
-                <div className="order-meta">
-                  <span>Request quote</span>
-                  <span>15 - 20 days</span>
+                            <div className="order-card">
+                <div className="intro-visual">
+                  <img 
+                    src={process.env.PUBLIC_URL + '/images/02.jpg'} 
+                    alt="Nayak Enterprises Logo" 
+                     
+                  />
                 </div>
               </div>
+
+                            <div className="order-card">
+                <div className="intro-visual">
+                  <img 
+                    src={process.env.PUBLIC_URL + '/images/fileimage4.jpg'} 
+                    alt="Nayak Enterprises Logo" 
+                     
+                  />
+                </div>
+              </div>
+
+              <div className="order-card">
+                <div className="intro-visual">
+                  <img 
+                    src={process.env.PUBLIC_URL + '/images/16354.jpg'} 
+                    alt="Nayak Enterprises Logo" 
+                     
+                  />
+                </div>
+              </div>
+
+              <div className="order-card">
+                <div className="intro-visual">
+                  <img 
+                    src={process.env.PUBLIC_URL + '/images/image1.png'} 
+                    alt="Nayak Enterprises Logo" 
+                     
+                  />
+                </div>
+              </div>
+
+
             </div>
             
             {/* <button className="order-btn">Start Custom Order</button> */}
@@ -97,7 +134,7 @@ const MainPage = ({ darkMode, setDarkMode }) => {
               <ul>
                 <li>Durable materials that withstand daily use</li>
                 <li>Customizable sizes and GSM options</li>
-                <li>Secure document protection</li>
+                <li>Excellent design based on requirement  </li>
                 <li>Eco-friendly production process</li>
                 <li>Fast turnaround times</li>
               </ul>
@@ -107,7 +144,7 @@ const MainPage = ({ darkMode, setDarkMode }) => {
               <h3>File Specifications</h3>
               <div className="spec-grid">
                 <div className="spec-item">
-                  <div className="spec-value">80-200 GSM</div>
+                  <div className="spec-value">Required GSM or Quality</div>
                   <div className="spec-label">Paper Weight</div>
                 </div>
                 <div className="spec-item">
@@ -119,7 +156,7 @@ const MainPage = ({ darkMode, setDarkMode }) => {
                   <div className="spec-label">Materials</div>
                 </div>
                 <div className="spec-item">
-                  <div className="spec-value">24-72h</div>
+                  <div className="spec-value">12 - 15 days</div>
                   <div className="spec-label">Production Time</div>
                 </div>
               </div>

@@ -154,7 +154,6 @@ body.dark-theme .intro-text p {
   }
 }
 
-
 /* Responsive improvements */
 @media (max-width: 768px) {
   .intro-columns {
@@ -318,18 +317,7 @@ body.dark-theme .order-meta {
   color: var(--dark-accent);
 }
 
-.order-btn {
-  padding: 12px 35px;
-  border: none;
-  border-radius: 30px;
-  background: var(--corporate-blue);
-  color: white;
-  font-size: 1.1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 5px 15px rgba(29, 78, 216, 0.3);
-}
+
 
 body.dark-theme .order-btn {
   background: var(--dark-accent);
