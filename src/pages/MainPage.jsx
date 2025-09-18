@@ -5,7 +5,7 @@ import Sidebar from '../Components/Sidebar';
 import './MainPage.css';
 
 const MainPage = ({ darkMode, setDarkMode }) => {
-  // const [sidebarVisible, setSidebarVisible] = useState(false);
+  const [sidebarVisible, setSidebarVisible] = useState(false);
   
   
   // Files data with comprehensive metadata
@@ -17,8 +17,8 @@ const MainPage = ({ darkMode, setDarkMode }) => {
   return (
     <div className="main-page">
       <Topbar 
-        // onToggle={() => setSidebarVisible(!sidebarVisible)} 
-        // darkMode={darkMode} 
+        onToggle={() => setSidebarVisible(!sidebarVisible)} 
+        darkMode={darkMode} 
       />
       {/* <Sidebar 
         isVisible={sidebarVisible} 
@@ -36,7 +36,11 @@ const MainPage = ({ darkMode, setDarkMode }) => {
       </p>
     </div>
     <div className="intro-visual">
-      <img src="/images/NayakLogo.png" alt="File printing service" />
+      <img 
+                    src={process.env.PUBLIC_URL + '/images/NayakLogo.png'} 
+                    alt="Nayak Enterprises Logo" 
+                     
+                  />
     </div>
   </div>
 </div>
