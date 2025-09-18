@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/nayakenterprises-react-app/static/css/main.741de823.css",
-    "main.js": "/nayakenterprises-react-app/static/js/main.dd7eba25.js",
+    "main.js": "/nayakenterprises-react-app/static/js/main.fdd0afe5.js",
     "static/js/453.670e15c7.chunk.js": "/nayakenterprises-react-app/static/js/453.670e15c7.chunk.js",
     "index.html": "/nayakenterprises-react-app/index.html",
     "main.741de823.css.map": "/nayakenterprises-react-app/static/css/main.741de823.css.map",
-    "main.dd7eba25.js.map": "/nayakenterprises-react-app/static/js/main.dd7eba25.js.map",
+    "main.fdd0afe5.js.map": "/nayakenterprises-react-app/static/js/main.fdd0afe5.js.map",
     "453.670e15c7.chunk.js.map": "/nayakenterprises-react-app/static/js/453.670e15c7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.741de823.css",
-    "static/js/main.dd7eba25.js"
+    "static/js/main.fdd0afe5.js"
   ]
 }
