@@ -1,0 +1,65 @@
+/* Topbar.css */
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px; /* Slightly taller for cream colors */
+  background: linear-gradient(
+    135deg,
+    #f5f5dc,  /* Light cream */
+    #e6d3a7,  /* Warm beige */
+    #f5f5dc   /* Light cream */
+  );
+  background-size: 200% 200%;
+  display: flex;
+  align-items: center;
+  padding: 0 25px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  margin-right: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.menu-btn:hover {
+  background-color: rgba(93, 64, 55, 0.1);
+}
+
+.logo {
+  height: 80px; /* Fixed height for consistent appearance */
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.1));
+  transition: transform 0.3s ease;
+  filter: 
+    drop-shadow(0 1px 2px rgba(0,0,0,0.1))
+    contrast(1.1);
+}
+
+.logo:hover {
+  transform: scale(1.03);
+}
