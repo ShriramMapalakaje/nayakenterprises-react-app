@@ -12,6 +12,7 @@ function App() {
   }, [darkMode]);
 
   return (
+    
     <div className={`app ${darkMode ? 'dark' : 'light'}`}>
       <MainPage darkMode={darkMode} setDarkMode={setDarkMode} />
     </div>
