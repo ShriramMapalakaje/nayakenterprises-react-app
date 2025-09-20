@@ -37,7 +37,7 @@ const MainPage = ({ darkMode, setDarkMode }) => {
     </div>
     <div className="intro-visual">
       <img 
-                    src={process.env.PUBLIC_URL + '/images/fileimage2.png'} 
+                    src={process.env.PUBLIC_URL + '/images/NayakLogo.png'} 
                     alt="Nayak Enterprises Logo" 
                      
                   />
